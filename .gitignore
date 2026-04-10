@@ -1,1 +1,20 @@
+# Django-specific
+*.log
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Secrets
+.env
+
+# Python/Poetry
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.python-version
+
+# OS specific
 .DS_Store
+Thumbs.db
