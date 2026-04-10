@@ -1,0 +1,19 @@
+[project]
+name = "salty-ssg"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "saaineui",email = "saaineui@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "django (>=6.0.4,<7.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "salty_ssg", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
