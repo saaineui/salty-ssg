@@ -1,0 +1,22 @@
+site:
+  locale: en_US
+  site_name: Salty SSG
+  description: Documentation Wiki
+  domain: https://www.stephsun.com
+  icons:
+    18: https://www.stephsun.com/theme/images/salty_icon.png
+    32: https://www.stephsun.com/theme/images/salty_icon_32x32.png
+    192: https://www.stephsun.com/theme/images/salty_icon_192x192.png
+    180: https://www.stephsun.com/theme/images/salty_icon_180x180.png
+    ms: https://www.stephsun.com/theme/images/salty_icon_144x144.png
+author:
+  name: Saul Tee
+  id: https://www.stephsun.com/#/schema/person/1
+  same_as:
+    - https://github.com/saaineui/salty-ssg
+  image:
+    id: https://www.stephsun.com/#/schema/person/image/
+    url: https://www.stephsun.com/theme/images/profile.png
+    width: 640
+    height: 480
+    caption: Saul Tee

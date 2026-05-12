@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <base href="{{site.domain}}/">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{{site.icons.18}}" sizes="18x18">
+    <link rel="icon" type="image/png" href="{{site.icons.32}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{site.icons.192}}" sizes="192x192">
+    <link rel="apple-touch-icon" href="{{site.icons.180}}" sizes="180x180">
+    <meta name="msapplication-TileImage" content="{{site.icons.ms}}">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <title>{{page.title}}</title>
+    <meta name="description" content="{{page.description}}">
+    <link rel="canonical" href="{{page.url}}">
+    <meta property="article:published_time" content="{{page.date_published}}">
+  </head>
+  <body>
+    <header>
+      <h1>{{page.title}}</h1>
+      <h2>by {{author.name}}</h2>
+    </header>
+    <main>
+      <div>
+        {{page.content[0]| safe}}
+      </div>
+      <hr />
+      <div>
+        {{page.content[1]| safe}}
+      </div>
+    </main>
+  </body>
+</html>

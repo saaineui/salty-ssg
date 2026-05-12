@@ -1,13 +1,11 @@
 #!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
 import os
-import sys
 
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('SALTY_SETTINGS_MODULE', 'config.settings')
-    execute_from_command_line(sys.argv)
+    os.environ.setdefault('SALTY_LOCAL_DOMAIN', 'http://localhost:8888')
+    os.environ.setdefault('SALTY_PROD_DOMAIN', 'https://www.example.com')
 
 
 if __name__ == '__main__':
