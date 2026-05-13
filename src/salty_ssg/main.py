@@ -16,10 +16,11 @@ templates = Jinja2Templates(directory=f"{theme_path}/pages")
 
 # Homepage
 @app.get("/index.json")
+# Add types eventually
 async def get_homepage_context():
     context = load_site_metadata()
-    page = load_page_metadata("index")
-    page["content"] = load_page_content("index")
+    page = load_page_metadata("_page")
+    page["content"] = load_page_content("_page")
     context["page"] = page
     return context
 

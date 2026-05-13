@@ -19,6 +19,7 @@ Let Salty do the rest:
 3. `poetry install`
 4. `poetry run pytest`
 5. In /src/salty_ssg, run `poetry run uvicorn main:app --reload`
-6. See your API: http://127.0.0.1:8000/
-7. See the docs: http://127.0.0.1:8000/docs
-8. Edit site/content/meta.yml or site/content/pages/index.yml and reload to see your changes
+6. See a sample page: http://127.0.0.1:8000
+7. See your API: http://127.0.0.1:8000/index.json
+8. See the docs: http://127.0.0.1:8000/docs
+9. Edit site/content/meta.yml, site/content/pages/index.yml, site/content/pages/index.md and reload to see your changes

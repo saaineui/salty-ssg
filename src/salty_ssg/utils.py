@@ -30,6 +30,7 @@ def load_page_metadata(path):
   with open(page_file_path, 'r') as file:
     try:
       meta = yaml.safe_load(file)
+      # Get the latest from either yml or md file
       meta["page"]["date_modified"] = date_modified
       return meta["page"]
     except yaml.YAMLError as exc:

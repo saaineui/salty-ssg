@@ -8,10 +8,10 @@ def test_load_site_metadata():
   assert re.search(r"[\w ]+", author_name) != None
 
 def test_load_page_metadata():
-  page = load_page_metadata("index")
-  assert page["url"] == "https://www.stephsun.com"
+  page = load_page_metadata("_page")
+  assert page["url"] == "https://www.example.com"
   assert re.search(r"^\d{4}-\d{2}-\d{2}", page["date_modified"]) != None
 
 def test_load_page_content():
-  content = load_page_content("index")
+  content = load_page_content("_page")
   assert re.search(r"^<h2>Why use Salty SSG", content[0]) != None

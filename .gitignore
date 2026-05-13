@@ -1,9 +1,17 @@
-# Django-specific
-*.log
-db.sqlite3
-db.sqlite3-journal
-media/
-staticfiles/
+# User Content
+site/theme/pages/**
+!site/theme/pages/index.html
+site/theme/static/fonts/*
+!site/theme/static/fonts/.keep
+site/theme/static/images/*
+!site/theme/static/images/.keep
+site/theme/static/scripts/*
+!site/theme/static/scripts/.keep
+site/theme/static/styles/*
+!site/theme/static/styles/.keep
+site/content/pages/**
+!site/content/pages/_page.md
+!site/content/pages/_page.yml
 
 # Secrets
 .env
