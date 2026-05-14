@@ -10,8 +10,6 @@ site/theme/static/scripts/*
 site/theme/static/styles/*
 !site/theme/static/styles/.keep
 site/content/pages/**
-!site/content/pages/index.md
-!site/content/pages/index.yml
 !site/content/pages/_page.md
 !site/content/pages/_page.yml
 
