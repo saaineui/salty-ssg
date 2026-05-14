@@ -1,0 +1,15 @@
+page:
+  title: Salty SSG
+  breadcrumb:
+    name: Home
+    position: 1
+  description: Salty is a perfectly seasoned static site generator.
+  url: https://www.example.com
+  date_published: "2026-07-14T10:00:00+00:00"
+  is_about: true
+  thumbnail:
+    url: https://www.example.com/static/images/profile.jpg
+    width: 1000
+    height: 1333
+    type: image/jpeg
+

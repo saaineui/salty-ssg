@@ -1,0 +1,13 @@
+page:
+  title: Salty SSG - Post 1
+  breadcrumb:
+    name: Post 1
+    position: 3
+  description: This is a dynamic path page
+  url: https://www.example.com/blog/post-1/
+  date_published: "2026-07-14T10:00:00+00:00"
+  thumbnail:
+    url: https://www.example.com/static/images/post-1-thumb.jpg
+    width: 600
+    height: 400
+    type: image/jpeg
