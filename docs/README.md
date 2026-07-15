@@ -6,6 +6,6 @@ Since this was a Python learning project, I restricted my LLM usage to querying 
 
 When I do work with Claude Code, this is the level of detail that I like to work out in a markdown design doc before beginning agentic development. I share the doc with Claude Code in plan mode and refine the solution with the model from there.
 
-- [Build process](https://github.com/saaineui/salty-ssg)
+- [Build process](https://github.com/saaineui/salty-ssg/blob/main/docs/build-process.md)
 - Interactive CLI
 - Library packaging

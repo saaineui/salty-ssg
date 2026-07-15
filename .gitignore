@@ -1,4 +1,5 @@
-# User Content
+# Test artifacts
+.coverage
 
 # Secrets
 .env
