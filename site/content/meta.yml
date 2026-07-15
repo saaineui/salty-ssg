@@ -1,22 +1,30 @@
 site:
   locale: en_US
+  locale_dash: en-US
+  type: website
   site_name: Salty SSG
-  description: Documentation Wiki
-  domain: https://www.example.com
+  description: Personal website
+  domain: http://127.0.0.1:8000
   icons:
-    18: https://www.example.com/theme/images/salty_icon.png
-    32: https://www.example.com/theme/images/salty_icon_32x32.png
-    192: https://www.example.com/theme/images/salty_icon_192x192.png
-    180: https://www.example.com/theme/images/salty_icon_180x180.png
-    ms: https://www.example.com/theme/images/salty_icon_144x144.png
+    18: /static/images/salty_icon.png
+    32: /static/images/salty_icon_32x32.png
+    192: /static/images/salty_icon_192x192.png
+    180: /static/images/salty_icon_180x180.png
+    ms: /static/images/salty_icon_144x144.png
 author:
-  name: Saul Tee
+  name: S. Sun
   id: https://www.example.com/#/schema/person/1
   same_as:
+    - https://www.example.com
     - https://github.com/saaineui/salty-ssg
+  logo:
+    id: https://www.example.com/schema/logo/image/
+    url: https://www.example.com/static/images/logo-wordmark.svg
+    width: 2670
+    height: 240
   image:
     id: https://www.example.com/#/schema/person/image/
-    url: https://www.example.com/theme/images/profile.png
-    width: 640
-    height: 480
-    caption: Saul Tee
+    url: https://www.example.com/static/images/profile.jpg
+    width: 1000
+    height: 1333
+    caption: Salty SSG in 2026

@@ -1,0 +1,2 @@
+{%- for sitemap_name in sitemap_names -%}Sitemap: {{domain}}/{{sitemap_name}}-sitemap.xml
+{% endfor %}

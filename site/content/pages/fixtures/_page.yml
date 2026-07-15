@@ -1,0 +1,14 @@
+page:
+  title: Lorem ipsum
+  breadcrumb:
+    name: Page
+    position: 2
+  description: Just a test page
+  url: https://www.example.com/fixtures/_page/
+  date_published: "2026-07-14T10:00:00+00:00"
+  is_about: true
+  thumbnail:
+    url: https://www.example.com/static/images/page-thumb.jpg
+    width: 1000
+    height: 1333
+    type: image/jpeg
