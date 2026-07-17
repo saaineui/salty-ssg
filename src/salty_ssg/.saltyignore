@@ -1,7 +1,0 @@
-# Add paths to ignore (Salty will ignore any paths that _start with_ these strings)
-.git/
-.gitignore
-.DS_Store
-.htaccess
-error.php
-wp-content/

@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+
+body {
+  font-family: Quicksand, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 16px;
+}
+
+a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #000;
+}
+a,
+a:focus,
+a:active,
+a:visited {
+  color: #000;
+}
+a:hover {
+  border-bottom: none;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1em;
+  letter-spacing: 0.22em;
+}
+h2 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.5em;
+}
+
+.grid {
+  display: grid;
+  gap: 1em;
+}
+header.sidebar {
+  display: grid;
+  width: 100%;
+  z-index: 1;
+  grid-template-columns: 31.7% 68.3%;
+}
+header.sidebar h1 {
+  position: relative;
+  text-align: justify;
+}
+header.sidebar h1 a {
+  border-bottom: none;
+}
+header.sidebar h1 a:hover .rotating {
+  filter: invert(100%);
+}
+header.sidebar h1 a .rotating {
+  background-color: #fff;
+}
+.rotating {
+  padding: 8px;
+}
+img.shaker {
+  width: 100%;
+  aspect-ratio: 223 / 150;
+}
+img.shaker.main {
+  display: none;
+}
+.homepage img.shaker.main {
+  display: block;
+}
+.homepage img.shaker.wow {
+  display: none;
+}
+img.wordmark {
+  width: 100%;
+  aspect-ratio: 480 / 150;
+}
+main.with-sidebar {
+  z-index: 2;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 223px 1fr;
+  }
+  header.sidebar {
+    width: 223px;
+    grid-template-columns: unset;
+    gap: 1em;
+  }
+  header.sidebar h1 {
+    width: 100%;
+  }
+  .rotating {
+    transform: rotate(-90deg) translateY(-476px);
+    transform-origin: right top;
+  }
+  img.shaker {
+    width: 223px;
+  }
+  img.wordmark {
+    width: 480px;
+    aspect-ratio: 480 / 150;
+  }
+}
