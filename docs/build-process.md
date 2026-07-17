@@ -50,7 +50,7 @@ Once completed, the build will log its finished time in a tracked file, src/salt
 
 #### Local reference scrubbing
 
-Before the HTML is saved to the target folder during the build process, references to the local or staging domain will be scrubbed and replaced with the production domain. Because <base> tag is used with relative paths in the HTML templates, there should be minimal local domain references.
+Before the HTML is saved to the target folder during the build process, references to the local or staging domain will be scrubbed and replaced with the production domain. Because `<base>` tag is used with relative paths in the HTML templates, there should be minimal local domain references.
 
 ### 6. Incremental builds (The What: Part III)
 

@@ -36,9 +36,12 @@ async def get_homepage_context():
 async def get_homepage(request: Request):
     context = await get_homepage_context()
     return templates.TemplateResponse(
-        request=request, name="index.html", context=context
+        request=request, name="_index.html", context=context
     )
 
+#########
+# Blog: #
+#########
 # Sample dynamic slug pages (microsite)
 @app.get("/blog/{slug}.json")
 async def get_page_context(slug: str):
@@ -46,6 +49,7 @@ async def get_page_context(slug: str):
     page = load_page_metadata(f"blog/{slug}")
     breadcrumbs = load_page_breadcrumbs(f"blog/{slug}", False)
     page["content"] = load_page_content(f"blog/{slug}")
+    page["type"] = "article"
     context["page"] = page
     page["schema"] = get_schema(context, breadcrumbs)
     return context
@@ -56,7 +60,7 @@ async def get_page(slug: str, request: Request):
     
     # Typically you would use a dedicated template here, like blog/[slug].html
     return templates.TemplateResponse(
-        request=request, name="base.html", context=context
+        request=request, name="_default.html", context=context
     )
 
 ################
@@ -76,7 +80,7 @@ async def get_error_page_context(code: str):
 async def get_error_page(request: Request, code: str):
     context = await get_error_page_context(code)
     return templates.TemplateResponse(
-        request=request, name="error/[code].html", context=context
+        request=request, name="_default.html", context=context
     )
 
 #############

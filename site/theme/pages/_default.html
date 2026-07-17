@@ -52,14 +52,26 @@
   </head>
   {% block body %}
   <body>
-    <header>
-      <a href="/">{{site.site_name}}</a>
-    </header>
-    <main>
-      {% for block in page.content %}
-      {{block | safe}}
-      {% endfor %}
-	  </main>
+    <div class="grid">
+      <header class="sidebar">
+        <img class="shaker main" src="{{site.nav.shaker.main.src}}" alt="{{site.nav.shaker.main.alt}}">
+        <img class="shaker wow" src="{{site.nav.shaker.wow.src}}" alt="{{site.nav.shaker.main.alt}}">
+        <h1>
+          <a href="/">
+            <div class="rotating">
+              <img class="wordmark" src="{{site.nav.wordmark.src}}" alt="{{site.nav.wordmark.alt}}">
+              <br>
+              {{site.nav.subtitle}}
+            </div>
+          </a>
+        </h1>
+      </header>
+      <main class="with-sidebar">
+        {% for block in page.content %}
+        {{block | safe}}
+        {% endfor %}
+      </main>
+    </grid>
   </body>
   {% endblock %}
 </html>

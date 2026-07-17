@@ -36,8 +36,18 @@ Or with test coverage:
 
 ## Run your first build
 
+Salty generates two kinds of sitemaps out of the box—a private one used by builds and public sitemaps to deploy to production. Salty also generates a robots.txt using the template in site/theme/pages/ and static error pages using the templates and content in the pages/error subfolders.
+
+Preview these artifacts prior to running your build at:
+
+- http://127.0.0.1:8000/sitemaps.json (private sitemap: pages compiled at build time)
+- http://127.0.0.1:8000/sitemaps/main.xml (public sitemap: one of the sitemaps compiled at build time)
+- http://127.0.0.1:8000/robots.txt
+- http://127.0.0.1:8000/error/404/
+- http://127.0.0.1:8000/error/500/
+
 From within src/salty_ssg, run:
 
 `poetry run python build.py --checkall`
 
-Your static site files should now exist in your target folder. If you open them in a browser, they will likely be missing styles as base tag is set to `PROD_DOMAIN` now. 
+Your static site files should now exist in your target folder. If you open them in a browser, they will likely be missing static assets as base tag is set to `PROD_DOMAIN` now. Start a server in the root of your target folder and replace base tag href value with your local domain and port to spot check the compiled files before deploying.

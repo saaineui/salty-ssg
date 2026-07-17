@@ -1,5 +1,5 @@
 page:
-  title: Salty SSG
+  title: Salty
   breadcrumb:
     name: Home
     position: 1
@@ -8,8 +8,8 @@ page:
   date_published: "2026-07-14T10:00:00+00:00"
   is_about: true
   thumbnail:
-    url: https://www.example.com/static/images/profile.jpg
+    url: https://www.example.com/static/images/screenshot.jpg
     width: 1000
-    height: 1333
+    height: 600
     type: image/jpeg
 

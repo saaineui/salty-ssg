@@ -2,9 +2,20 @@ site:
   locale: en_US
   locale_dash: en-US
   type: website
-  site_name: Salty SSG
+  site_name: Salty Static Site Generator
   description: Personal website
   domain: http://127.0.0.1:8000
+  nav:
+    subtitle: a perfectly seasoned Static Site Generator
+    wordmark:
+      src: /static/images/salty-wordmark.svg
+      alt: SALTY
+    shaker:
+      main:
+        src: /static/images/salty-logo.svg
+        alt: "Logo: Salty the Salt Shaker"
+      wow:
+        src: /static/images/salty-logo_wow.svg
   icons:
     18: /static/images/salty_icon.png
     32: /static/images/salty_icon_32x32.png
@@ -12,19 +23,19 @@ site:
     180: /static/images/salty_icon_180x180.png
     ms: /static/images/salty_icon_144x144.png
 author:
-  name: S. Sun
+  name: Your Site’s Creator
   id: https://www.example.com/#/schema/person/1
   same_as:
     - https://www.example.com
     - https://github.com/saaineui/salty-ssg
   logo:
     id: https://www.example.com/schema/logo/image/
-    url: https://www.example.com/static/images/logo-wordmark.svg
-    width: 2670
-    height: 240
+    url: https://www.example.com/static/images/salty-wordmark.svg
+    width: 480
+    height: 150
   image:
     id: https://www.example.com/#/schema/person/image/
     url: https://www.example.com/static/images/profile.jpg
     width: 1000
     height: 1333
-    caption: Salty SSG in 2026
+    caption: Your Site’s Creator
