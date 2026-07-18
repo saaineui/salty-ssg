@@ -1,3 +1,5 @@
+<img width=54 height=80 src="https://raw.githubusercontent.com/saaineui/salty-ssg/main/site/theme/static/images/salty-logo.svg" alt="Logo: Salty the Salt Shaker"> <img style="margin-left: 16px" width=256 height=80 src="https://raw.githubusercontent.com/saaineui/salty-ssg/refs/heads/main/site/theme/static/images/salty-wordmark.svg" alt="SALTY">
+
 # Salty SSG
 
 A perfectly seasoned Static Site Generator
@@ -11,6 +13,10 @@ Let Salty do the rest:
 - Recompile individual pages to HTML when underlying content or designs change
 - Recompile XML sitemaps with new dates
 - Trigger global updates as needed
+
+<a href="https://stephsun.com/static/videos/build_1.mp4" target="_blank"><img src="https://stephsun.com/static/images/salty-demo_1_btn.png" alt="Play Demo" width=400 height=320></a>
+
+<a href="https://stephsun.com/static/videos/build_2.mp4" target="_blank"><img src="https://stephsun.com/static/images/salty-demo_2_btn.png" alt="Play Second Demo" width=400 height=320></a>
 
 ## Get started
 
