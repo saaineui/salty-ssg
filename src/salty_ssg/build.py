@@ -77,10 +77,7 @@ def save_pages(sitemaps_data: dict[str: Any]):
     for url in sitemaps_data[sitemap_name]:
       save_page(url["loc"])
 
-################
-# Main process #
-################
-if __name__ == "__main__":
+def main():
   # Parse user inputs
   parser = argparse.ArgumentParser()
   parser.add_argument(
@@ -137,3 +134,9 @@ if __name__ == "__main__":
   if args.autokill and server_process != None:
     print(f"Stopping the staging site on {source["host"]}:{source["port"]}...")
     server_process.terminate()
+
+################
+# Main process #
+################
+if __name__ == "__main__":
+  main()

@@ -18,7 +18,7 @@ Let Salty do the rest:
 2. Install poetry
 3. `poetry install`
 4. `poetry run pytest`
-5. In /src/salty_ssg, run `poetry run uvicorn main:app --reload`
+5. Start server: `poetry run poe start`
 6. See a sample page: http://127.0.0.1:8000
 7. See your API: http://127.0.0.1:8000/index.json
 8. See the docs: http://127.0.0.1:8000/docs
@@ -46,8 +46,10 @@ Preview these artifacts prior to running your build at:
 - http://127.0.0.1:8000/error/404/
 - http://127.0.0.1:8000/error/500/
 
-From within src/salty_ssg, run:
+Build your first static site at `SALTY_TARGET`:
 
-`poetry run python build.py --checkall`
+`poetry run poe build --checkall`
+
+(Without `--checkall` flag, Salty won't check dynamic path pages for errors before running the build.)
 
 Your static site files should now exist in your target folder. If you open them in a browser, they will likely be missing static assets as base tag is set to `PROD_DOMAIN` now. Start a server in the root of your target folder and replace base tag href value with your local domain and port to spot check the compiled files before deploying.
