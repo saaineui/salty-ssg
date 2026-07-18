@@ -18,11 +18,23 @@ dependencies = [
     "coverage (>=7.14.3,<8.0.0)",
     "pydantic-settings (>=2.14.2,<3.0.0)",
     "textual (>=8.2.8,<9.0.0)",
-    "textual-dev (>=1.8.0,<2.0.0)"
+    "textual-dev (>=1.8.0,<2.0.0)",
+    "poethepoet (>=0.48.0,<0.49.0)",
 ]
 
 [tool.poetry]
 packages = [{include = "salty_ssg", from = "src"}]
+
+[tool.poetry.requires-plugins]
+poethepoet = ">=0.48"
+
+[tool.poe.tasks.start]
+cmd = "uvicorn main:app --reload"
+cwd = "./src/salty_ssg"
+
+[tool.poe.tasks.build]
+cmd = "python build.py"
+cwd = "./src/salty_ssg"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
