@@ -16,6 +16,7 @@
       <main class="with-sidebar">
         {% for block in page.content %}
         {{block | safe}}
+        {%- if not loop.last -%}<hr>{% endif %}
         {% endfor %}
       </main>
     </div>

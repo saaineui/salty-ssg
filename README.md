@@ -1,4 +1,4 @@
-<img width=54 height=80 src="https://raw.githubusercontent.com/saaineui/salty-ssg/main/site/theme/static/images/salty-logo.svg" alt="Logo: Salty the Salt Shaker"> <img style="margin-left: 16px" width=256 height=80 src="https://raw.githubusercontent.com/saaineui/salty-ssg/refs/heads/main/site/theme/static/images/salty-wordmark.svg" alt="SALTY">
+<img width=324 height=80 src="https://stephsun.com/static/images/salty-logo-icon-wordmark.png" alt="Logo: Salty">
 
 # Salty SSG
 
@@ -29,6 +29,8 @@ Let Salty do the rest:
 7. See your API: http://127.0.0.1:8000/index.json
 8. See the docs: http://127.0.0.1:8000/docs
 9. Edit site/content/meta.yml, site/content/pages/index.yml, site/content/pages/index.md and reload to see your changes
+  - **Important:** Keep `domain: http://127.0.0.1:8000` in meta.yml so that local assets render—it will be replaced with your prod domain during builds
+  - Tip: Use `[=================]` to add multiple content blocks to any of your content markdowns. `page.content` in your template will be an array of HTML blocks split on that delimiter
 
 Or with test coverage:
 

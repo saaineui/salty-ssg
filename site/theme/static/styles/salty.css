@@ -21,7 +21,6 @@ a:visited {
 a:hover {
   border-bottom: none;
 }
-
 h1 {
   margin: 0;
   font-size: 1em;
@@ -32,11 +31,20 @@ h2 {
 }
 p {
   font-size: 1.5em;
+  line-height: 1.2;
+}
+li {
+  line-height: 1.8;
+}
+hr {
+  background: #000;
+  height: 2px;
 }
 
 .grid {
   display: grid;
   gap: 1em;
+  align-items: start;
 }
 header.sidebar {
   display: grid;
